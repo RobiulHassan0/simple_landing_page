@@ -1,0 +1,74 @@
+// Google Fonts Import
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+// Common Styles
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include bannerFont($font-inter, 18px, 400, $black-color, 27px, 0%);
+
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+span, a{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    transition: all linear 0.3s;
+}
+
+p{
+    color: $ptext-color;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+// Container Style
+.container{
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+// Theme Button Style
+.theme-btn{
+    @include bannerFont($font-space, 20px, 700, $black-color, 22px);
+    background-color: $card-bg;
+    border-radius: 50px;
+    padding: 19px 30px;
+    border: 0;
+    i{
+        margin-left: 10px;
+    }
+    &:hover{
+        color: $white-color;
+        background-color: $primary-color;
+    }
+    &.banner-btn{
+        background-color: $black-color;
+        color: $white-color;
+        &:hover{
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+
+// Header Styles
+
+.header-one{
+    @include bannerFont($font-space, 80px, 700, $black-color, 88px);
+
+}

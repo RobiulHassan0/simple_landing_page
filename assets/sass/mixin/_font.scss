@@ -1,0 +1,8 @@
+@mixin bannerFont($ff:'aans-serif', $fs:16px, $fw:400, $fc:#333, $lh:normal, $ls:normal) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    color: $fc;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
