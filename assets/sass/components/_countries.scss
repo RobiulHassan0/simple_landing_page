@@ -1,0 +1,71 @@
+// Countries Section Styles
+.countries-section {
+
+    .countries-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        .card-item {
+            background: $card-bg;
+            border-radius: 20px;
+            width: 100%;
+            overflow: hidden;
+            transition: all linear 0.3s;
+
+            .card-image {
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .card-text {
+                padding: 30px 30px 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .title-box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    a {
+                        &:hover {
+                            color: $primary-color;
+                        }
+
+                    }
+
+                    .card-price {
+                        @include bannerFont($font-space, 25px, 700, $black-color, 27.5px);
+
+                        span {
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                .card-description {
+                    @include bannerFont($font-inter, 14px, 400, $ptext-color, 22px);
+                }
+
+                .theme-btn {
+                    margin-top: 10px;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+
+    }
+}

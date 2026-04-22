@@ -64,11 +64,28 @@ ul, ol{
             color: $white-color;
         }
     }
+    &.normal-btn{
+        padding: 0;
+        background: transparent;
+        color: $black-color;
+        border-radius: 0;
+    }
 }
 
 // Header Styles
 
-.header-one{
+.heading-one{
     @include bannerFont($font-space, 80px, 700, $black-color, 88px);
+}
 
+.heading-three{
+    @include bannerFont($font-space, 30px, 700, $black-color, 30px);
+}
+
+.section-title{
+    padding-bottom: 50px;
+    .title{
+        @include bannerFont($font-space, 50px, 700, $black-color, 55px);
+        margin-bottom: 20px;
+    }
 }
