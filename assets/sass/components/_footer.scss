@@ -7,8 +7,10 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
+
         .footer-widget {
             width: 100%;
+
             .footer-title {
                 color: $white-color;
                 margin-bottom: 30px;
@@ -22,9 +24,10 @@
                 li {
                     a {
                         color: $white-color;
-                        @include bannerFont($font-inter, 18px, 400, $white-color, 18px);
+                        @include bannerFont($font-inter, 18px, 400, $white-color, 27px);
                         transition: all 0.3s ease;
                         opacity: 0.8;
+
                         &:hover {
                             opacity: 1;
                         }
@@ -32,25 +35,67 @@
                 }
             }
 
-            .address-widget{
+            .address-widget {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                gap: 30px;
-                .info{
+                gap: 35px;
+
+                .info {
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
-                    p{
-                        @include bannerFont($font-inter, 18px, 400, $white-color, 18px);
+
+                    p {
+                        @include bannerFont($font-inter, 18px, 400, $white-color, 27px);
                         opacity: 0.8;
                     }
-                    h4{
+
+                    h4 {
                         @include bannerFont($font-space, 25px, 700, $white-color, 27.5px);
                     }
                 }
             }
         }
 
+    }
+
+    .footer-copyright {
+        margin-top: 120px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        opacity: 0.8;
+        @include bannerFont($font-inter, 18px, 400, $white-color, 18px);
+
+        .text-box {
+            display: flex;
+            justify-content: space-between;
+            @include bannerFont($font-inter, 18px, 400, $white-color, 27px);
+            opacity: 0.8;
+            .copyright-text{
+                p{
+                    @include bannerFont($font-inter, 18px, 400, $white-color, 27px);
+                    opacity: 0.8;
+                }
+            }
+            .footer-links {
+                display: flex;
+                gap: 30px;
+
+                li {
+                    a {
+                        @include bannerFont($font-inter, 18px, 400, $white-color, 27px);
+                        transition: all 0.3s ease;
+                        opacity: 0.8;
+
+                        &:hover {
+                            color: $primary-color;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+            }
+        }
     }
 }

@@ -382,7 +382,7 @@ ul, ol {
   font-weight: 400;
   font-size: 18px;
   color: #fff;
-  line-height: 18px;
+  line-height: 27px;
   letter-spacing: normal;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -402,7 +402,7 @@ ul, ol {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 30px;
+  gap: 35px;
 }
 .footer-section .footer-main .footer-widget .address-widget .info {
   display: -webkit-box;
@@ -419,7 +419,7 @@ ul, ol {
   font-weight: 400;
   font-size: 18px;
   color: #fff;
-  line-height: 18px;
+  line-height: 27px;
   letter-spacing: normal;
   opacity: 0.8;
 }
@@ -430,4 +430,61 @@ ul, ol {
   color: #fff;
   line-height: 27.5px;
   letter-spacing: normal;
+}
+.footer-section .footer-copyright {
+  margin-top: 120px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  line-height: 18px;
+  letter-spacing: normal;
+}
+.footer-section .footer-copyright .text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  line-height: 27px;
+  letter-spacing: normal;
+  opacity: 0.8;
+}
+.footer-section .footer-copyright .text-box .copyright-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  line-height: 27px;
+  letter-spacing: normal;
+  opacity: 0.8;
+}
+.footer-section .footer-copyright .text-box .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.footer-section .footer-copyright .text-box .footer-links li a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  line-height: 27px;
+  letter-spacing: normal;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+.footer-section .footer-copyright .text-box .footer-links li a:hover {
+  color: #83CD8F;
+  opacity: 1;
 }
