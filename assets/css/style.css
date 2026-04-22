@@ -345,3 +345,89 @@ ul, ol {
 .blog-section .blogs-main .blog-item .blog-text .normal-btn:hover {
   color: #83CD8F;
 }
+
+.footer-section {
+  background: #090f1f;
+  padding: 120px 0 34px 0;
+}
+.footer-section .footer-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-section .footer-main .footer-widget {
+  width: 100%;
+}
+.footer-section .footer-main .footer-widget .footer-title {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer-section .footer-main .footer-widget .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.footer-section .footer-main .footer-widget .links li a {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  line-height: 18px;
+  letter-spacing: normal;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+.footer-section .footer-main .footer-widget .links li a:hover {
+  opacity: 1;
+}
+.footer-section .footer-main .footer-widget .address-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.footer-section .footer-main .footer-widget .address-widget .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.footer-section .footer-main .footer-widget .address-widget .info p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  line-height: 18px;
+  letter-spacing: normal;
+  opacity: 0.8;
+}
+.footer-section .footer-main .footer-widget .address-widget .info h4 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  line-height: 27.5px;
+  letter-spacing: normal;
+}

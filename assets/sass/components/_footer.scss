@@ -1,0 +1,56 @@
+// Footer Section
+.footer-section {
+    background: $black-color;
+    padding: 120px 0 34px 0;
+
+    .footer-main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        .footer-widget {
+            width: 100%;
+            .footer-title {
+                color: $white-color;
+                margin-bottom: 30px;
+            }
+
+            .links {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    a {
+                        color: $white-color;
+                        @include bannerFont($font-inter, 18px, 400, $white-color, 18px);
+                        transition: all 0.3s ease;
+                        opacity: 0.8;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .address-widget{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 30px;
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    p{
+                        @include bannerFont($font-inter, 18px, 400, $white-color, 18px);
+                        opacity: 0.8;
+                    }
+                    h4{
+                        @include bannerFont($font-space, 25px, 700, $white-color, 27.5px);
+                    }
+                }
+            }
+        }
+
+    }
+}
