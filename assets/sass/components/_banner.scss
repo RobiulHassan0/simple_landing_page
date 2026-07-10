@@ -2,23 +2,19 @@
 .banner-section{
     background: $banner-bg;
     padding: 80px 0;
-    .banner-main{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 30px;
-        .banner-text{
-            .banner-title{
-               margin-bottom: 30px;
-            }
-            p{
-                margin-bottom: 40px;
-            }
+
+    .banner-text{
+        .banner-title{
+            margin-bottom: 30px;
         }
-        .banner-image{
-            img{
-                border-radius: 20px;
-            }
+        p{
+            margin-bottom: 40px;
         }
     }
+    .banner-image{
+        img{
+            border-radius: 20px;
+        }
+    }
+
 }

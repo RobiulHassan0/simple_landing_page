@@ -1,26 +1,76 @@
 // Header Section
 .header-section {
-    padding: 30px 0;
-    .header-main {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        // padding: 2rem 0;
-        nav{
-            ul{
-                display: flex;
-                gap: 30px;
-                li{
-                    i{
-                        font-size: 10px;
-                        position: relative;
-                        top: -1px;
+    padding: 10px 0;
+
+    .navbar {
+        .navbar-nav {
+            display: flex;
+            gap: 30px;
+
+            .nav-item {
+                position: relative;
+
+                i {
+                    font-size: 10px;
+                    position: relative;
+                    top: -1px;
+                }
+
+                .nav-link {
+                    @include bannerFont($font-inter, 18px, 500, $black-color, 80px, 0%);
+
+                    &:hover {
+                        color: $primary-color;
                     }
-                    a{
-                       @include bannerFont($font-inter, 18px, 500, $black-color, 27px, 0%);
-                       &:hover{
-                            color: $primary-color;
-                       }
+                }
+
+                .submenu {
+                    position: absolute;
+                    top: 90%;
+                    left: 0;
+                    width: 240px;
+                    background: $white-color;
+                    border-radius: 10px;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all linear 0.3s;
+                    li {
+                        position: relative;
+                        a {
+                            @include bannerFont($font-inter, 16px, 500, $black-color, 27px, 0%);
+                            padding: 10px 22px;
+                            border-bottom: 1px solid #f5f5f5;
+                            width: 100%;
+                            transition: all linear 0.3s;
+                            &:hover {
+                                background: $primary-color;
+                                border-color: $primary-color;
+                                color: $white-color;
+                            }
+                        }
+                        &:last-child {
+                            a {
+                                border-bottom: none;
+                            }
+                        }
+                        .submenu{
+                            left: 100%;
+                            top: 0;
+                        }
+                        &:hover >{
+                            .submenu{
+                                visibility: visible;
+                                opacity: 1;
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+                &:hover > {
+                    .submenu{
+                        visibility: visible;
+                        opacity: 1;
                     }
                 }
             }

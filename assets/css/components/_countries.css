@@ -1,0 +1,1 @@
+.countries-section .countries-main{display:-ms-grid;display:grid;-ms-grid-columns:1fr 30px 1fr 30px 1fr;grid-template-columns:repeat(3,1fr);gap:30px}
